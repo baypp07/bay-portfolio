@@ -1,0 +1,79 @@
+<section class="webdesign-section" [@explainerAnimRight]>
+<div class="anime1">
+    <!-- header -->
+    <div class="header">
+        <div class="left-header">
+            <h1>Sportbak Store</h1>
+            <p>Boutique en ligne Web design </p>
+            <p><span>&</span></p>
+            <p>Développement web application par Angular2+</p>
+           
+        </div>
+    <!-- slides -->
+        <div class="right-header">
+            <img class="image-ecommerce" src="../assets/images/ecommerce/sportbakstore.png" />
+        </div>
+    </div>
+
+    <!--Objectif & challenges  -->
+    <div class="objectif-section">
+        <h1>Objectifs & Challenges</h1>
+        <p>
+            <span>Objectif</span> : la société Sportbak fonctionne en B2B et souhaiterait avoir un petit site de e-commerce pour répondre aux services et aux besoins. L’objectif de cette mission est donc de créer une boutique en ligne orientée vers le web d’application. 
+        </p>
+        <p>
+            <span>Challenge</span> : Comment optimiser le développement du e-commerce full stack en 8 semaines ?
+        </p>
+    </div>
+
+    <!-- roles -->
+    <div class="roles-section">
+        <div *ngFor="let role of roles" class="roles">
+            <p class="namerole"> <i class="fa {{role.icon}}" aria-hidden="true" ></i> {{role.name}}</p>
+            <div class="text-skill">
+                <ul *ngFor="let item of role.skill; let i=index">
+                <li class="roleskill">{{ item[i] }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- processus -->
+
+    <h1>Processus</h1>
+    <div class="processus">
+    <!-- <img class="processus" src="../assets/images/ecommerce/processus.png" /> -->
+    </div>
+    <!-- problem -->
+    <div class="problem-section">
+        <h1>Problèmes</h1>
+            <p>
+                Comment pourrions-nous concevoir une interface unique, mais toujours connectée à la marque globale et suffisamment flexible pour fonctionner avec d’autres gammes ? 
+            </p>
+    </div>
+    
+    <!-- résultat -->
+    <div class="result-section">
+        <h1>Résultat</h1>
+            <p>
+                La charte graphique a été mise en place dans le but d’avoir une cohérence graphique sur le site web officiel : Sportbak, les codes couleurs utilisés sont le doré, le blanc et le noir, puis les informations et contenus devaient être clairs, simples, lisibles, structurés et cohérents.
+            </p>
+            <p>
+                La présentation des designs finaux a satisfait les fondateurs et le responsable commercial, tous les fichiers ont était envoyés pour pouvoir lancer les autres phases de développement web d’application ainsi que les développements back-end.
+            </p>
+    </div>
+
+    <!-- idendités  -->
+    <div class="identity1">
+    <!-- <img class="identity1" src="../assets/images/ecommerce/identity.png" /> -->
+    </div>
+    <!-- résultatfinal -->
+    <div>
+        <img class="identity" src="../assets/images/ecommerce/storefullpage.png" />
+        <img class="identity" src="../assets/images/ecommerce/sportbakprototype.gif" />
+    </div>
+
+    <!-- autre projets -->
+    <app-autreprojets></app-autreprojets>
+</div>
+</section>

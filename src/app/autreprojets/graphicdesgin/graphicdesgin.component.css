@@ -1,0 +1,147 @@
+.pagination{
+    text-align:center;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+h1{
+    margin-bottom: 50px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.designprojets{
+    box-shadow: var(--boxshadow);
+    background-color: var(--blueboxcolor);
+    margin: 0 20px 15px 30px;
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+.designprojets:hover{
+    transform: var(--transform);
+    box-shadow: var(--boxshadow-hover);
+}
+
+.image{
+    max-width: 167px;
+    max-width: ;height: 191px;
+
+}
+.text{
+    width: 263px;
+}
+.name{
+    color:var(--primary);
+}
+
+.back:hover{
+    color: var(--primary);
+}
+.hidden-Projet{
+    opacity: 0.5;
+}
+.hidden-Projet:hover{
+    transform: none;
+    box-shadow: var(--boxshadow);
+}
+
+/* responsive max-width 1100px */
+@media only screen and (max-width : 1100px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex:1 1 1;
+        width: 100%;
+        margin:0;
+        justify-content: space-around;
+    }
+
+    .text,.image{
+        width: 100%;
+        margin:auto;
+
+    }
+}
+/* responsive max-width 980px */
+@media only screen and (max-width : 980px){
+    h1{
+        margin-bottom: 10px;
+    }
+    .content{
+        flex-direction: column;
+  
+    }
+    .designprojets{
+        /* padding:10px; */
+
+            display:flex;
+            width: 70%;
+            
+        }
+        .text,.image{
+            max-width: 50%;
+            height: auto;
+    
+        }
+        .image{
+            padding-left: 20px;
+        }
+
+}
+/* responsive max-width 350px */
+@media only screen and (max-width : 650px){
+    .designprojets{
+        display:flex;
+        width: 100%;
+        height: auto;
+    }
+    .text,.image{
+        max-width: 50%;
+        margin:auto;
+    }
+    .text{
+        margin-left: 5px;
+    }
+@media only screen and (max-width : 350px){
+    .image{
+        max-width: 40%;
+        height: auto;
+        padding-left:10px;
+    }
+
+    .button-project{
+        padding: 0.3em 0.5em !important;
+    }
+    
+
+}
+   
+    /* .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .designprojets{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-around;
+ }
+    .image{
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+    .text,.image{
+        width: 40%;
+         font-size: 0.7rem; 
+    }
+    .button-project{
+        padding:5px;
+    } */
+}

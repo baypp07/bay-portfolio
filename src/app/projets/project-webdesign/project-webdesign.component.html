@@ -1,0 +1,90 @@
+<section class="webdesign-section" [@explainerAnimLeft]>
+<div class="anime1">
+    <!-- header -->
+    <h1>Sportbak / Futbak</h1>
+    <p>Web Design & création site internet
+    </p>
+
+    <!-- slides -->
+   <app-sliderimage></app-sliderimage>
+
+    <!--Objectif & challenges  -->
+    <div class="objectif-section">
+    <h1>Objectifs & Challenges</h1>
+        <p>
+            La start-up Sportbak a développé un outil de tracking innovant pour les sportifs amateurs, leur premier produit est destiné aux amateurs de foot en salle, grâce à un bracelet se portant sur la cheville qui collecte, calcule, analyse et affiche le suivi des statistiques de jeu des joueurs de foot en salle.
+        </p>
+        <p>
+            Les objectifs et challenges ici sont : Comment créer une page web pour bien présenter et informer sur l’activité de l’entreprise ? Sans faire la confusion avec le premier produit proposé “Futbak”.
+        </p>
+    </div>
+
+    <!-- roles -->
+    <div class="roles-section">
+    <div *ngFor="let role of roles" class="roles">
+        <p class="namerole"> <i class="fa {{role.icon}}" aria-hidden="true" ></i> {{role.name}}</p>
+        <div class="text-skill">
+            <ul *ngFor="let item of role.skill; let i=index">
+            <li class="roleskill">{{ item[i] }}</li>
+            </ul>
+        </div>
+    </div>
+   </div>
+
+    <!-- processus -->
+    <h1>Processus</h1>
+    <div class="processus">
+    <!-- <img class="processus" src="../assets/images/webdesign/processus.png" /> -->
+    </div>
+
+
+    <!-- problem -->
+    <div class="problem-section">
+        <h1>Problèmes</h1>
+            <p>
+                La marque, actuellement, n’était pas une représentation précise de notre clientèle ou de ses offres professionnelles en B2B.
+            </p>
+            <p>
+                Comment pourrions-nous concevoir une nouvelle voie numérique qui contribuerait à renforcer la confiance et inciterait les visiteurs à s’inscrire ?
+            </p>
+        </div>
+    <!-- résultat -->
+    <div class="result-section">
+        <h1>Résultats</h1>
+            <p>
+                Page Sportbak : Comme cette page est créée pour identifier la société et son activité globale auprès des professionnels, les codes couleurs utilisés sont : le noir, le blanc et le doré. Ainsi, le message que la société fait passer est synonyme d’élégance, de nouveauté et de créativité.
+            </p>
+            <p>
+                Page Futbak : La première gamme de l’entreprise, dont la cible était les joueurs de foot en salle, était destinée à montrer le côté sportif, actif et créatif. Les codes couleurs utilisés étaient : le jaune, le vert et le gris.
+            </p>
+            <p>
+                En fin de compte, l’équipe et les fondateurs étaient satisfaits et enthousiastes de voir les sites finaux créés et modifiés en seulement 4 semaines. Enfin leurs produits imaginés pouvaient prendre vie.
+            </p>
+    </div>
+
+    <!-- idendités  -->
+    <div class="identity1">
+    <!-- <img class="identity" src="../assets/images/webdesign/identity.png" /> -->
+    </div>
+    <!-- résultatfinal -->
+
+    <div>
+        <div class="titreidentityphoto">
+            <h3 class="id1">
+                Écran sur les laptops et desktops
+            </h3>
+            <h3 class="id2">
+                Écran sur les smartphones
+            </h3>
+        </div>
+        <img class="identity" src="../assets/images/webdesign/sportbakfullpage.png" />
+        <img class="identity" src="../assets/images/webdesign/sportbakpressfullpage.png" />
+        <img class="identity" src="../assets/images/webdesign/futbakfullpage.png" />
+    </div>
+
+    <!-- autre projets -->
+    <app-autreprojets></app-autreprojets>
+</div>
+</section>
+
+

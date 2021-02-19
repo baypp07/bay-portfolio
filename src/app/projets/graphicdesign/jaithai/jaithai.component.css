@@ -1,0 +1,135 @@
+.title{
+    max-height: 109px;
+    max-width: 529px;
+    margin: 50px auto;
+}
+.jaithai{
+    max-width: 1100px;
+    max-height: 450px;
+    transition: var(--transition);
+}
+.jaithai:hover{
+    transform: var(--transform);
+}
+.image-jaithai, .image-jaithai-2, .image-jaithai-3, .jaithai{
+    box-shadow: var(--boxshadow);
+    border-radius: 10px;
+}
+.content{
+    max-width: 907px;
+    margin: 50px auto;
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-image{
+    flex-wrap: wrap;
+    width: 100%;
+    margin:auto auto 100px;
+    text-align: center;
+}
+.image-jaithai{
+    max-width: 1100px;
+}
+
+.image-jaithai-2{
+    width: 570px;
+    margin-top: 10px;
+}
+.image-jaithai-3{
+    width: 500px;
+    margin-top: 10px;
+}
+.tile{
+    /* position: relative; */
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.tile .text{
+    position: absolute;
+    height: calc(100%-60px);
+    top:20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.text h2{
+    margin: 20px 0 0 0;  
+    text-align: center;
+    transform: translateX(200px);
+    color:var(--primary);
+
+  }
+.animate-text{
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+  .tile:hover{
+    transform: scale(1.05);
+}
+.tile:hover img{
+    opacity: 0.2;
+}
+.tile:hover .animate-text{
+    transform: translateX(0);
+    opacity: 1;
+}
+@media only screen and (max-width : 1100px){
+    .content, .image-jaithai, .image-jaithai-2, .image-jaithai-3, .jaithai, .title{
+        width: 100%;
+        height: auto;
+    }
+    .flex-image{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width : 650px){
+    .tile .text{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-left: 50%;
+        transform: translateX(-100%,-50%);
+    }
+
+    .titre-image{
+            margin-bottom: 10px;
+        }
+    .text h2{
+        height: 45px;
+        transform: translateX(150px);
+        padding-top:15px;
+    }
+    .tile:hover img{
+        opacity: 1;
+        
+    }
+}
+@media only screen and (max-width : 460px){
+    .text h2{
+        width: 100%;
+        width: 200px;
+        height: 35px;
+        padding-top: 5px;
+        transform: translateX(75px);
+    }
+    .title, .content, .flex-image{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .tile .text{
+        margin-left: 50%;
+    }
+}
+@media only screen and (max-width : 360px){
+    .text h2{
+        transform: translateX(40px);
+    }
+    .tile .text{
+        margin-left: 45%;
+    }
+}
+

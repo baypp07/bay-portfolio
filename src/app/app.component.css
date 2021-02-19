@@ -1,0 +1,127 @@
+
+
+.header{
+    grid-column: 2 / span 6;
+
+}
+.fullpage{
+    background-color: var(--background);
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(60px,1fr);
+}
+main{
+    /* app-accueil,app-about,app-graphicdesign,app-lanthai,app-sportbak,app-ecommerce,app-project-webdesign */
+    grid-column: 2 / span 6;
+    position: relative;  
+}
+main app-navbar{
+    grid-column: 2 / span 6;
+}
+.footer{
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.toggle-mode{
+  padding-bottom: 20px;
+  color:var(--on-background);
+  }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 11px;
+  margin: 0 5px;
+
+}
+
+.switch input { 
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  rgba(0, 0, 0, 0.5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color:white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #F1CEAE;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #F1CEAE;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@media only screen and (max-width : 700px){
+  .header{
+    grid-column: 1 / span 8;
+  
+   }
+}
+
+
+@media only screen and (max-width : 650px){
+
+ main{
+  grid-column: 1 / span 8;
+  align-items: center;
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 60px;
+ } 
+ 
+ .toggle-mode{
+   text-align: right;
+ }
+}
+ @media only screen and (max-width : 400px){
+  .fullpage{
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / span 8;
+      margin-left: 0;
+
+     } 
+}
+
+
+
+    /*  toggle theme */
+  

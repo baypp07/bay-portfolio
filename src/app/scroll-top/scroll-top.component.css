@@ -1,0 +1,27 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+button {
+    background: var(--bottonColor);
+    border-radius: 50px;
+    padding:5px;
+
+}
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+.fa{
+    color:var(--background);
+
+}
+@media only screen and (max-width : 650px){
+    .scroll-to-top {
+       padding-bottom: 20px;
+         }
+ }

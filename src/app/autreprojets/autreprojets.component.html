@@ -1,0 +1,14 @@
+    <!-- autres projets -->
+<section class="pagination">
+<h1> Autres projets</h1>
+<div class="content">
+    <div *ngFor="let autreprojet of autreprojets" class="designprojets" [ngClass]="{'hidden-Projet':router.url === autreprojet.lien}">
+        <img class="image" src="{{autreprojet.image}}" />
+        <div class="text">
+            <p class="description">{{autreprojet.title}}</p>
+            <p class="name">{{autreprojet.name}}</p>
+            <a routerLink="{{autreprojet.lien}}"><button class="button-project">Lire l'étude des cas</button></a>
+        </div>
+    </div>
+</div>
+</section>

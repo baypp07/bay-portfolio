@@ -1,0 +1,22 @@
+<section class="content" [@stepperRight]>
+<div class="anime1">
+    <h1>Lan Thai Restaurant</h1>
+    <p>Identité visuelle d’un restaurant traditionnel thaïlandais</p>
+    <img class="image image1" src="../assets/images/graphicdesign/lanthairesto.png" />
+    <h1>Cuisine Traditionnelle Thaï</h1>
+        <p class="text-cuisine"> 
+        Chaleureux restaurant traditionnel situé au cœur du centre touristique du Cours Julien à Marseille, Lan Thaï s’est paré d’une nouvelle identité alliant élégance et authenticité. Son univers graphique révèle une cuisine authentique et conviviale.
+        </p>
+    <div class="wrap">
+        <div class="tile" *ngFor="let image of images">
+            <img class="image" src="{{image.src}}"/> 
+            <div class="text">
+            <h2 class="titre-image animate-text">{{image.name}}</h2>
+            </div>
+        </div>
+    </div>
+    
+    <app-graphicdesgin></app-graphicdesgin>
+</div>
+</section>
+

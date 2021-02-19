@@ -1,0 +1,35 @@
+<section class="jaithai-section" [@stepperLeft]>
+  <div class="anime1">
+    <div class="title">
+        <h1>Jaï Thai Restaurant</h1>
+        <p>Un changement de marque du restaurant Lan thaï en identifiant l’image d’un restaurant traditionnel semi-gastronomique  </p>
+    </div>
+
+    <div class="flex-image">
+        <img class="jaithai"src="../assets/images/graphicdesign/jaithairesto.png"  />
+    </div>
+
+    <div class="content">
+        <h1>Cuisine semi-gastronomique</h1>
+          <p>
+            Accompagner dans la création du nom de la marque jusqu’à la réalisation du logotype, ainsi que les supports de communications comme : la carte de menus, la carte des vins, d’apéritif et les cartes de visite... etc
+          </p>
+          <p>
+            Ce Restaurant semi-gastronomique situé au cœur du village d’Allauch, Jaï Thai a voulu augmenter sa gamme de cuisine thaïlandaise alliant la créativité et l’originalité. L’ensemble du design met en avant une cuisine semi-gastronomique et authentique.
+          </p>
+    </div>
+    <div class="flex-image wrap">
+    <div class="tile" *ngFor="let image of images"> 
+        <img [ngClass]="{'image-jaithai': image.id === '1', 'image-jaithai-2': image.id === '2', 'image-jaithai-3' : image.id === '3' }" src="{{image.src}}" /> 
+        <div class="text">
+             <h2 class="animate-text">{{image.name}}</h2>
+        </div>
+    </div>
+   
+    </div>
+
+    <app-graphicdesgin></app-graphicdesgin>
+
+  </div>
+</section>
+

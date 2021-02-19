@@ -1,0 +1,25 @@
+body{
+    background-color: #E7E2DC;
+}
+h1, .active{ color:var(--primary);
+}
+p, a, button,ul,li {color:var(--on-background);}
+.button-project{
+    margin-top:20px;
+    padding: 0.3em 1em;
+    border:none;
+    background: var(--bottonColor);
+    box-shadow: var(--boxshadow);
+    transition: var(--transition);
+    filter: drop-shadow(10px 4px 5px rgba(0, 0, 0, 0.35));
+    border-radius: 84px;
+    color: var(--background);
+    
+
+}
+.button-project:hover{
+    background-color: var(--darkforbutton);
+    box-shadow: var(--boxshadow);
+    color:var(--primary);
+    transform: var(--transform);
+}

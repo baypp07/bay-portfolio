@@ -1,0 +1,26 @@
+<section [@stepperRight]>
+<div class="anime1">
+<div class="title">
+    <h1>Sportbak</h1>
+    <p>
+        Identité visuelle et accompagnement dans la création des supports de communication d’une start-up High-tech dans le secteur sportif, spécialisé dans le foot indoor.
+    </p>
+</div>
+    <h3>Logotypes</h3>
+    <img class="image-sportbak" src="../assets/images/graphicdesign/sportbaklogo.png" />
+<div class="title">
+    <h1 >Supports de communication</h1>
+    <p> Aider à améliorer la communication de l’image de l’entreprise de façon cohérente avec des objectifs et s’adaptant à tous types de public et contextes. Mes domaines d’intervention sont l’édition, l’affiche, l’illustration, la publicité et les plaquettes de communications...</p>
+</div>
+<div class="imageflex wrap">
+    <div class="images tile" *ngFor="let image of images" >
+        <img class="image" src="{{image.src}}" />
+        <div class="text">
+        <h2 class="animate-text">{{image.name}}</h2>
+        </div>
+    </div>
+</div>
+<app-graphicdesgin></app-graphicdesgin>
+</div>
+</section>
+

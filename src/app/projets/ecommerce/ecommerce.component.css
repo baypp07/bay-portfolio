@@ -1,0 +1,210 @@
+.webdesign-section{
+    text-align: center;
+    font-size: 1.25rem;
+}
+/* header */
+.header{
+    display:flex;
+    margin-top:60px;
+    /* align-items: center;*/
+    justify-content: space-around; 
+}
+.header h1{
+    margin-bottom: 10px;
+    /* margin-top:115px */
+}
+.header span{
+    color:var(--primary);
+}
+.left-header{
+    width: 280px;
+    margin-right: 30px;
+}
+.image-ecommerce{
+    padding:10px 0 20px 50px;
+    width:850px;
+}
+/* objectif */
+.objectif-section,.problem-section,.result-section{
+    text-align: center;
+    width: 781px;
+    margin: 0 auto 100px auto;
+}
+.objectif-section p span{
+    text-decoration: underline;
+}
+/* roles */
+.roles-section{
+    background-color: var(--blueboxcolor);
+    box-shadow: var(--boxshadow);
+    padding:30px 0 30px 0;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: space-around;
+
+}
+.roles{
+    border:1px dashed var(--primary);
+    width: 220px;
+    border-radius: 5px;
+
+}
+.fa{
+    margin-right: 5px;
+}
+.namerole{
+    color:var(--primary);
+    margin: 10px 5px 5px 5px;
+    font-weight: 700;
+}
+.text-skill{
+    margin-bottom: 10px;
+    margin-left: 10%;
+
+}
+.roles li{
+    text-align: left;
+    color:var(--on-background);
+    list-style: none;
+    margin-right: 10px;
+    
+
+
+}
+/* processus */
+.processus{   
+    max-width: 807px;
+    height: 900px;
+    margin:0 auto 100px auto;
+    transition: var(--transition);
+    background:var(--processus-ecommerce);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+/* result */
+.identity{
+    width: 949px;
+    margin:0 auto 50px auto;
+    filter: drop-shadow(30px 30px 5px rgba(28, 27, 27, 0.3));
+}
+.identity1{
+    max-width: 920px;
+    height: 290px;
+    margin:0 auto 0 auto;
+    background:var(--identity-ecommerce);
+    background-size:920px 290px ;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+   
+}
+.image-ecommerce,.processus{
+    transition: var(--transition);
+}
+.image-ecommerce:hover,.processus:hover{
+    transform: var(--transform);
+}
+/* responsive max-width 1100px */
+@media only screen and (max-width : 1100px){
+    .header{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .left-header{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .image-ecommerce,.objectif-section,.result-section,.problem-section,.identity{
+        width: 100%;
+    }
+    .processus, .identity1{
+        width: 100%;
+    }
+    .identity1{
+        height: 250px;
+    }
+    .objectif-section{
+        margin-bottom:30px ;
+    }
+    .roles-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .roles{
+        height: auto;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    .text-skill{ 
+        margin-left: 0;
+    }
+    .roles li{
+        text-align: center;
+        margin:0;
+    }
+
+}
+@media only screen and (max-width : 860px){
+
+    .processus{
+        height: 750px;
+    }
+    .identity1{
+        height: 220px;
+    }
+ }
+/* 650px max screen */
+@media only screen and (max-width : 650px){
+    .roles-section,.processus,.problem-section,.result-section,.identity,.identity1{
+        margin-bottom: 20px;
+    }
+    .roles{
+        height: auto;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .image-ecommerce{
+        margin:0;
+        padding:0;
+    }
+    .roles-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .roles{
+        height: auto;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .processus{
+        height: 550px;
+    }
+    .identity1{
+        height: 170px;
+    }
+
+}
+@media only screen and (max-width : 450px){
+    .processus{
+        height: 460px;
+    }
+    .identity1{
+        height: 120px;
+    }
+
+}
+@media only screen and (max-width : 350px){
+    .processus{
+        height: 360px;
+    }
+    .identity1{
+        height: 70px;
+    }
+}

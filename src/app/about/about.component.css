@@ -1,0 +1,153 @@
+h3,h4, h5{
+    color: var(--primary);
+}
+h4{
+    margin-top: 20px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.image-project1{
+    width:546px;
+}
+.name-about{
+    margin-bottom: 20px;
+}
+
+.text-about{
+    margin-top:30px;
+    width:430px;
+    font-size: 1.25rem;
+}
+.text-about a:hover{
+    color:var(--primary);
+    transition: var(--transition);
+    
+}
+
+.skills{
+    background-color: var(--blueboxcolor);
+    box-shadow: var(--boxshadow);
+    text-align: center;
+    padding:50px 30px 50px 30px;
+    margin-bottom: 50px;
+
+    width: 100%;
+}
+.skills h1{
+    margin-bottom: 50px;
+}
+.skill-content{
+    display: flex;
+    align-items: center;
+
+}
+.left-section{
+    text-align: left;
+    padding-right: 0px;
+}
+h3{
+    margin:30px 0 5px 0;
+}
+.skill-title{
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top:10px;
+    
+}
+.skill-title li{
+    list-style: none;
+    margin-right: 20px;
+}
+.skill-title p:hover{
+    color:var(--primary);
+    transition: var(--transition);
+   
+}
+.software,.image-project1,.skill-image-right {
+    transition: var(--transition);
+}
+.software:hover,.image-project1:hover,.skill-image-right:hover{
+    transform: var(--transform);
+}
+.icon-skill{
+    width: 40px;
+    height: 36px; 
+}
+.skill-image-right{
+    width: 400px;
+    padding:auto;
+    margin:auto;
+    align-items: center;
+
+}
+
+/* responsive max-width 1100px */
+@media only screen and (max-width : 1100px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-project1{
+        margin:auto;
+        width: 50%;
+        height: auto;
+    }
+    .text-about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills h1{
+        margin-bottom: 20px;
+    }
+    .skill-content{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left-section{
+        padding:0;
+        margin-top: 20px;
+    }
+    .skill-image-right{
+        width: 50%;
+        padding:0;
+        margin:0;
+    }
+}
+
+/* 650px max screen */
+@media only screen and (max-width : 650px){
+
+    .image-project1{
+        margin:0px;
+    }
+    .skill-content{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left-section{
+        width: 100%;
+        margin-top: 10px;
+        padding:10px;
+        text-align: center;
+    }
+    .skill-image-right{
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
+    .skill-title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
