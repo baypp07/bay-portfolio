@@ -360,7 +360,16 @@ span{
     .title-section.titre-processus{
         margin-bottom: -20px;
     }
+    .tile{
+        height: 150px;
+    }
 }
+@media only screen and (max-width : 450px){
+    .tile{
+        height: 120px;
+    }
+}
+
 /* responsive max-width 380px */
 @media only screen and (max-width : 380px){
     .image-designprojet{
