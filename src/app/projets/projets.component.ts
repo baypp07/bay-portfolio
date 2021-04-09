@@ -14,7 +14,7 @@ export class ProjetsComponent implements OnInit {
     {
       id:"1",  
       image:'./assets/images/ecommerce/sportbakprototype.gif',
-      title:'Web Design & Dev Angular 2+ Full stack',
+      title:'Dev web Full stack Angular 2+ & Web Design & ',
       name:'Sportbak Store',
       text:'Développer une plateforme web d’application de Boutique en ligne et répondre aux besoins de leurs clients.',
       lien:'/projets/sportbakstore' 
