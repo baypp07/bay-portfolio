@@ -114,6 +114,17 @@
     
 
 }
+.fa-code{
+    align-items: right;
+    color:var(--primary);
+    margin-left: 20px;
+    margin-top:10px;
+    text-decoration: underline;
+}
+.fa-code:hover{
+    transform: var(--transform);
+    color:var(--on-background);
+}
 
 /* responsive max-width 650px */
 @media only screen and (max-width : 650px){

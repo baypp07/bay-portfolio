@@ -23,6 +23,7 @@ export class AboutComponent implements OnInit {
     {image:'../assets/images/about/html.svg', name:'Html'},
     {image:'../assets/images/about/javascript.svg', name:'Javascript'},
     {image:'../assets/images/about/css.svg', name:'CSS'},
+    {image:'../assets/images/about/firebase.svg', name:'Firebase'},
    
 
   ];

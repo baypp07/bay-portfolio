@@ -1,57 +1,73 @@
-<div class="aboutPage"[@explainerAnimRight] >
-<div>
-<section class="about">
-    <img class="image-project1 anime1" src="../assets/images/about/aboutme1.png" />
+<div class="aboutPage" [@explainerAnimRight]>
+    <div>
+        <section class="about">
+            <img class="image-project1 anime1" src="../assets/images/about/aboutme1.png" />
 
-    <div class="text-about anime1">
-        <div class="name-about">
-            <h1>Phetsavanh</h1>
-            <h5>/pet-sã-vãn/</h5>
-        </div>
-        <p>
-            Bonjour ! Je m’appelle Phetsavanh.
-        </p>    
-        <p>
-            Je suis une junior UX/UI designer et développeuse web Angular2+ résidant à Marseille. Aimant les challenges et manifestant un réel intérêt pour les nouvelles technologies, ainsi que pour la psychologie permettant de mieux comprendre les réactions humaines, j’ai choisi de devenir designeuse de produits. J’ai réalisé que c’était un métier dans lequel je pouvais exploiter mes diverses compétences, un mélange d’expériences en management des projets de développement web d’application, de marketing des produits innovants ainsi que le design qui aident à mettre en valeur les produits et les expériences des utilisateurs. 
-        </p>
+            <div class="text-about anime1">
+                <div class="name-about">
+                    <h1>Phetsavanh</h1>
+                    <h5>/pet-sã-vãn/</h5>
+                </div>
+                <p>
+                    Bonjour ! Je m’appelle Phetsavanh.
+                </p>
+                <p>
+                    Je suis une junior UX/UI designer et développeuse web Angular2+ résidant à Marseille. Aimant les
+                    challenges et manifestant un réel intérêt pour les nouvelles technologies, ainsi que pour la
+                    psychologie permettant de mieux comprendre les réactions humaines, j’ai choisi de devenir designeuse
+                    de produits. J’ai réalisé que c’était un métier dans lequel je pouvais exploiter mes diverses
+                    compétences, un mélange d’expériences en management des projets de développement web d’application,
+                    de marketing des produits innovants ainsi que le design qui aident à mettre en valeur les produits
+                    et les expériences des utilisateurs.
+                </p>
 
-        <h4> Contact</h4>
-        <a href="mailto: pphouone@hotmail.fr" target="_blank">pphouone@hotmail.fr </a>
-        <h4> Lien</h4>
-        <p><a href="../assets/cv/giustiphetsavanh.pdf" target="_blank">Curriculum vitæ </a></p>
-        <!-- <p><a href="mailto: pphouone@hotmail.fr" target="_blank">LinkedIn </a></p> -->
-    </div>
-</section>
-<section class="skills anime1">
-        <h1>Mes compétences Techniques</h1>
-        <div class="skill-content">
-        <div class="left-section">
-             <p>Je travaille en tant que développeuse d'interface utilisateur et designer d'expérience utilisateur, créant des expériences combinant le développement web, design, business et marketing.</p>
-        <h3> Compétences </h3>
-               <p> 
-                Développement web/ UX/UI Design/ Graphic Design/ Digital Marketing / Wireframing / Recherche des utilisateurs/ Management des projets /Présentations 
-              </p>
-        <h3> Design Software </h3>
-        <div class="skill-title">
-        <ul *ngFor="let software of softwares" class="software" > 
-            <li > <img class="icon-skill" src="{{software.image}}" /> </li>
-            <li> <p>{{software.name}} </p></li>
-        </ul>
-        </div>
+                <h4> Contact</h4>
+                <a href="mailto: pphouone@hotmail.fr" target="_blank">pphouone@hotmail.fr </a>
+                <h4> Lien</h4>
+                <p><a href="https://github.com/baypp07?tab=repositories" target="_blank">Github </a></p>
+                <p><a href="../assets/cv/giustiphetsavanh.pdf" target="_blank">Curriculum vitæ </a></p>
 
-        <h3> Developper skills </h3>
-        <div class="skill-title">
-        <ul *ngFor="let devskill of devskills" class="software" > 
-            <li > <img class="icon-skill" src="{{devskill.image}}" /> </li>
-            <li> <p>{{devskill.name}} </p></li>
-        </ul>
-        </div>
+            </div>
+        </section>
+        <section class="skills anime1">
+            <h1>Mes compétences Techniques</h1>
+            <div class="skill-content">
+                <div class="left-section">
+                    <p>Je travaille en tant que développeuse d'interface utilisateur et designer d'expérience
+                        utilisateur, créant des expériences combinant le développement web, design, business et
+                        marketing.</p>
+                    <h3> Compétences </h3>
+                    <p>
+                        Développement web/ UX/UI Design/ Graphic Design/ Digital Marketing / Wireframing / Recherche des
+                        utilisateurs/ Management des projets /Présentations
+                    </p>
+
+                    <h3> Compétences de développeur </h3>
+                    <div class="skill-title">
+                        <ul *ngFor="let devskill of devskills" class="software">
+                            <li> <img class="icon-skill" src="{{devskill.image}}" /> </li>
+                            <li>
+                                <p>{{devskill.name}} </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3> Design Software </h3>
+                    <div class="skill-title">
+                        <ul *ngFor="let software of softwares" class="software">
+                            <li> <img class="icon-skill" src="{{software.image}}" /> </li>
+                            <li>
+                                <p>{{software.name}} </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="right-section">
+                    <img class="skill-image-right" src="../assets/images/about/experience.png" />
+                </div>
+            </div>
+        </section>
     </div>
-    
-    <div class="right-section">
-        <img class="skill-image-right" src="../assets/images/about/experience.png" />
-    </div>
-    </div>
-</section>
-</div>
 </div>

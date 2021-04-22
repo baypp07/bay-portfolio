@@ -1,36 +1,41 @@
 <section [@fader]>
-<div id="projects" class="anime1" >
-    <div class="titre">
-        <h1> Mes projets</h1>
-        <p> Développement Web & Graphic Desgin 
-        </p>
-    </div>
-    
-  <div class="row-project">
-    <div class="autres-projets">
-        <div class="info-project img slider">
-            <app-sliderimage></app-sliderimage>
-        </div>
-        <div class="info-project desc">
-            <h2 class="title-project">Développement Front-end & Web Design </h2>
-            <h2 class="name-project">Sportbak / Futbak</h2>
-            <p class="detail-project">Déterminer la conception graphique de sites internet jusqu’à la réalisation du développement web et son déploiement. 
+    <div id="projects" class="anime1">
+        <div class="titre">
+            <h1> Mes projets</h1>
+            <p> Développement Web & Graphic Desgin
             </p>
-            <a routerLink="/projets/webdesign"><button class="button-project">Lire l'étude des cas</button></a>
+        </div>
+
+        <div class="row-project">
+            <div class="autres-projets">
+                <div class="info-project img slider">
+                    <app-sliderimage></app-sliderimage>
+                </div>
+                <div class="info-project desc">
+                    <h2 class="title-project">Développement Front-end & Web Design </h2>
+                    <h3 class="name-project">Sportbak / Futbak</h3>
+                    <p class="detail-project">Déterminer la conception graphique de sites internet jusqu’à la
+                        réalisation du développement web et son déploiement.
+                    </p>
+                    <a routerLink="/projets/webdesign"><button class="button-project">Lire l'étude des cas</button></a>
+                </div>
+            </div>
+
+            <div *ngFor="let orproject of orprojects" class="autres-projets"
+                [ngClass]="{'reverse': orproject.id === '1' || orproject.id === '3'}">
+                <div class="info-project img">
+                    <img class="image-orprojects" src="{{orproject.image}}" />
+                </div>
+                <div class="info-project desc">
+                    <h2 class="title-project">{{orproject.title}}</h2>
+                    <h3 class="name-project">{{orproject.name}}</h3>
+                    <p class="detail-project">{{orproject.text}}</p>
+                    <a href="{{orproject.lien}}"><button class="button-project">Lire l'étude des cas</button></a>
+                    <a *ngIf="orproject.id === '2'" target="_blank" href="{{orproject.sourceCode}}"> 
+                        <i class="fa fa-code"> Github</i> 
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    
-        <div *ngFor="let orproject of orprojects" class="autres-projets" [ngClass]="{'reverse': orproject.id === '1'}" >  
-            <div class="info-project img" >
-                <img class="image-orprojects" src="{{orproject.image}}" />
-            </div>
-            <div class="info-project desc">
-                <h2 class="title-project">{{orproject.title}}</h2>
-                <h2 class="name-project">{{orproject.name}}</h2>
-                <p class="detail-project">{{orproject.text}}</p>
-                <a routerLink="{{orproject.lien}}"><button class="button-project">Lire l'étude des cas</button></a>
-            </div> 
-        </div>
-  </div>
-</div>
 </section>
