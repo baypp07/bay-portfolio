@@ -29,6 +29,16 @@ export class AboutComponent implements OnInit {
 
   ];
 
+
+  // Je suis une junior UX/UI designer et développeuse web Angular2+ résidant à Marseille. Aimant les
+  // challenges et manifestant un réel intérêt pour les nouvelles technologies, ainsi que pour la
+  // psychologie permettant de mieux comprendre les réactions humaines, j’ai choisi de devenir designeuse
+  // de produits. J’ai réalisé que c’était un métier dans lequel je pouvais exploiter mes diverses
+  // compétences, un mélange d’expériences en management des projets de développement web d’application,
+  // de marketing des produits innovants ainsi que le design qui aident à mettre en valeur les produits
+  // et les expériences des utilisateurs.
+
+
   ngOnInit() {
   }
 

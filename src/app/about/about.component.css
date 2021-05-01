@@ -22,8 +22,12 @@ h4{
 
 .text-about{
     margin-top:30px;
-    width:430px;
+    width:530px;
     font-size: 1.25rem;
+    text-align: justify;
+}
+ p {
+    margin-bottom: 10px;
 }
 .text-about a:hover{
     color:var(--primary);
@@ -45,7 +49,7 @@ h4{
 }
 .skill-content{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
 
 }
 .left-section{
