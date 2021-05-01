@@ -1,6 +1,6 @@
 # Giusti Portfolio 
 
-deploy on firebase giusti-phetsavanh.web.app
+deploy on firebase https://giusti-phetsavanh.web.app/
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
